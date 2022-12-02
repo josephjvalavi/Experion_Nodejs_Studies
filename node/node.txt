@@ -1,0 +1,103 @@
+nodejs\\\\
+
+ version1.0.0
+major minor 
+npm  init
+
+process: give basic information
+
+website:tutorialteacher
+
+in script tag we can add aname and  start file as node filename.js and 
+ we can run the program from terminal by calling npm start start is which is the namen of file writed in script
+start :echo ertyu&& node app.js
+
+installing devlopment dependency:
+npm i package --save-dev
+
+to insatll dependencies npm install
+
+
+module creation:
+module.exports = function greet(){
+    console.log("hello from node");
+}
+console.log(module);
+module.exports();
+
+module callingh:
+const sec= require('./second')
+sec()
+
+
+calling multiple functions from a local module file 
+
+module.exports.greet = function greet(){
+    console.log("hello from node");
+}
+module.exports.sayhi = function sayhi(){
+    console.log("hello moto");
+}
+calling:
+const sec= require('./second')
+sec.greet()
+sec.sayhi()
+
+
+console.table(module constatnt) //we cn avoid module keyword
+
+module second method
+function greet(){
+//     console.log("hello from node");
+// }
+// function sayhi(){
+//     console.log("hello moto");
+// }
+// module.exports={
+//     greet:greet,
+//     sayHi:sayhi //name to be called is first and the functuion is the second
+// }
+
+
+const sec= require('./second')
+
+sec.greet();
+// sec.sayHi();
+
+passing object variable:
+
+var obj={
+    name:"joseph",age:22
+    
+}
+exports.person= obj
+
+console.log(sec.person.name)
+
+
+new method in es6 
+
+in app.js:
+import sec from second.mjs ///file name shoud be in mjs format
+sec.greet()
+
+in second.mjs
+
+function greet(){
+ export default{greet}
+
+
+\\\\\exit a file system check
+exisxtfile()
+
+///no fetch in node for fetcing data from api
+
+
+
+typescript///
+
+
+
+
+
+
